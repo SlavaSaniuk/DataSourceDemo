@@ -10,6 +10,11 @@
               url="jdbc:mysql://localhost:36547/WebDemo"
               maxTotal="8"
               maxIdle="4"  />
+    
+    //Если сконфигурирован глобально
+    <ResourceLink name="jdbc/DatabaseName"
+   global="jdbc/DatabaseName"
+   type="javax.sql.DataSource"/>
 
 
 </Context>
